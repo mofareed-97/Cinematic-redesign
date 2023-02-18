@@ -31,7 +31,7 @@ export function AppNavbar() {
         isScrolled
           ? "bg-slate-900 shadow-lg bg-slate-900/90 backdrop-blur-sm"
           : " bg-transparent"
-      } fixed top-0 right-0 z-30 w-[calc(100%_-_11rem)] duration-300`}
+      } fixed top-0 right-0 z-30 w-full md:w-[calc(100%_-_11rem)] duration-300`}
     >
       <div className=" px-12 flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
         <MainNav items={siteConfig.mainNav} />

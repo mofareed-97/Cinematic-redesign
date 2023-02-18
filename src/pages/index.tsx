@@ -23,7 +23,7 @@ export default function IndexPage({ movies }: { movies: MovieProps[] }) {
       <section className="w-full min-h-[200vh]">
         <Banner movie={movies[2]} />
 
-        <div className="p-10 grid grid-cols-4 gap-8">
+        <div className="p-10 columns-1 md:columns-2 lg:columns-3 xl:columns-4">
           {movies.map((movie) => (
             <Card key={movie.id} movie={movie} />
           ))}
